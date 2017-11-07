@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="UTF-8"?>
+	<web-app 
+	
+		xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
+		xmlns="http://java.sun.com/xml/ns/javaee" 
+		xsi:schemaLocation="http://java.sun.com/xml/ns/javaee http://java.sun.com/xml/ns/javaee/web-app_3_0.xsd" version="3.0">
+ 
+  
+  
+   <servlet>
+  	<servlet-name>ClientSearchServlet</servlet-name>
+  	<servlet-class>ecole.ensa.projet.presentation.ClientSearchServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+  	<servlet-name>ClientSearchServlet</servlet-name>
+  	<url-pattern>/chercherArticle</url-pattern>
+  </servlet-mapping>
+ 
+  
+    <servlet>
+  	<servlet-name>ShowAllArticlesServlet</servlet-name>
+  	<servlet-class>ecole.ensa.projet.presentation.ShowAllArticlesServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+  	<servlet-name>ShowAllArticlesServlet</servlet-name>
+  	<url-pattern>/showAll</url-pattern>
+  </servlet-mapping> 
+  
+
+    <servlet>
+  	<servlet-name>SearchProcServlet</servlet-name>
+  	<servlet-class>ecole.ensa.projet.presentation.SearchProcServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+  	<servlet-name>SearchProcServlet</servlet-name>
+  	<url-pattern>/afficherArticles</url-pattern>
+  </servlet-mapping>
+  
+    <servlet>
+  	<servlet-name>GrossisteLoginServlet</servlet-name>
+  	<servlet-class>ecole.ensa.projet.presentation.GrossisteLoginServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+  	<servlet-name>GrossisteLoginServlet</servlet-name>
+  	<url-pattern>/LoginG</url-pattern>
+  </servlet-mapping>
+  
+  
+      <servlet>
+  	<servlet-name>GrossisteLoginProcServlet</servlet-name>
+  	<servlet-class>ecole.ensa.projet.presentation.GrossisteLoginProcServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+  	<servlet-name>GrossisteLoginProcServlet</servlet-name>
+  	<url-pattern>/login</url-pattern>
+  </servlet-mapping>
+
+
+     <servlet>
+  	<servlet-name>GrossisteSignUpServlet</servlet-name>
+  	<servlet-class>ecole.ensa.projet.presentation.GrossisteSignUpServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+  	<servlet-name>GrossisteSignUpServlet</servlet-name>
+  	<url-pattern>/inscription</url-pattern>
+  </servlet-mapping>   
+  
+  
+       <servlet>
+  	<servlet-name>GrossisteSignUpProcServlet</servlet-name>
+  	<servlet-class>ecole.ensa.projet.presentation.GrossisteSignUpProcServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+  	<servlet-name>GrossisteSignUpProcServlet</servlet-name>
+  	<url-pattern>/signup</url-pattern>
+  </servlet-mapping> 
+  
+  
+         <servlet>
+  	<servlet-name>AjouterArticleServlet</servlet-name>
+  	<servlet-class>ecole.ensa.projet.presentation.AjouterArticleServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+  	<servlet-name>AjouterArticleServlet</servlet-name>
+  	<url-pattern>/ajouterArticle</url-pattern>
+  </servlet-mapping> 
+  
+  
+           <servlet>
+  	<servlet-name>AjouterArticleProcServlet</servlet-name>
+  	<servlet-class>ecole.ensa.projet.presentation.AjouterArticleProcServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+  	<servlet-name>AjouterArticleProcServlet</servlet-name>
+  	<url-pattern>/add</url-pattern>
+  </servlet-mapping> 
+  
+ 
+ 
+  <welcome-file-list>
+  	<welcome-file>vues/acc.jsp</welcome-file>
+  </welcome-file-list>
+ 
+  
+  </web-app>
