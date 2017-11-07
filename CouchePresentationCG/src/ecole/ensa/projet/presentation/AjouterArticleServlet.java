@@ -12,9 +12,11 @@ public class AjouterArticleServlet extends HttpServlet
 	public AjouterArticleServlet() {}
 	protected void doGet(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException 
 	{
+		String usernameG = "";
+		usernameG = req.getParameter("usernameG");
+		req.setAttribute("usernameG", usernameG);
 		
-		
-		req.getRequestDispatcher("/vues/addArticle.jsp").forward(req, resp);;
+		req.getRequestDispatcher("/vues/addArticle.jsp").forward(req, resp);
 		
 	}
 	

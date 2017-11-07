@@ -40,7 +40,7 @@ public class GrossisteSignUpProcServlet  extends HttpServlet
 		
 			System.out.println("grossiste : "+modelGrossiste.getCoordonnees()+ " "+
 			modelGrossiste.getNom()  + "  " +modelGrossiste.getPassword() + " " + modelGrossiste.getUsername());
-			
+			req.setAttribute("usernameG", modelGrossiste.getUsername());
 			
 		}catch (NotBoundException e)
 		{

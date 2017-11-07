@@ -77,16 +77,17 @@
 					<div class="login-container">
 					  <form data-ajax="false"  action="<%=request.getContextPath()%>/add" method="post">
 					    <label for="fname">Nom</label>
-					    <input type="text" id="fname" name="acrticle-name" placeholder="Username">
+					    <input type="text" id="fname" name="article-name" placeholder="Nom">
 					
 					    <label for="lname">Prix</label>
-					    <input type="text" id="lname" name="article-price" placeholder="Password">
+					    <input type="text" id="lname" name="article-price" placeholder="Prix">
 					    
 					    <label for="lname">Type</label>
-					    <input type="text" id="lname" name="article-type" placeholder="Password">
+					    <input type="text" id="lname" name="article-type" placeholder="Type">
 					    
 					    <label for="lname">Composition</label>
-					    <input type="text" id="lname" name="article-composition" placeholder="Password">
+					    <input type="text" id="lname" name="article-composition" placeholder="Composition">
+						<input type="hidden" name = "usernameG" value = "${usernameG}"/>
 					
 					  
 					    <input type="submit" value="Ajouter">

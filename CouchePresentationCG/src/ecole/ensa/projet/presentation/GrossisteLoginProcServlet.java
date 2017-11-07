@@ -34,6 +34,8 @@ public class GrossisteLoginProcServlet extends HttpServlet
 			System.out.println("grossiste : "+modelGrossiste.getCoordonnees()+ " "+
 			modelGrossiste.getNom()  + "  " +modelGrossiste.getPassword() + " " + modelGrossiste.getUsername());
 			
+			req.setAttribute("usernameG", modelGrossiste.getUsername());
+			System.out.println("IN GrossisteLoginProc, usernameG = " +modelGrossiste.getUsername());
 			
 		}catch (NotBoundException e)
 		{

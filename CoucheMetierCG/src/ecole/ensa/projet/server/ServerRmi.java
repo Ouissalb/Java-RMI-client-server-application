@@ -5,6 +5,7 @@ import java.rmi.Naming;
 import java.rmi.RemoteException;
 import java.rmi.registry.LocateRegistry;
 
+import ecole.ensa.projet.metier.ArticleMetier;
 import ecole.ensa.projet.metier.ClientMetier;
 import ecole.ensa.projet.metier.GrossisteMetier;
 
@@ -21,6 +22,9 @@ public class ServerRmi {
 		
 		GrossisteMetier metierG = new GrossisteMetier();
 		Naming.rebind("rmi://localhost/grossiste", metierG);
+		
+		ArticleMetier metierA = new ArticleMetier();
+		Naming.rebind("rmi://localhost/article", metierA);
 		
 		System.out.println("Serveur RMI en ecoute....");
 	}

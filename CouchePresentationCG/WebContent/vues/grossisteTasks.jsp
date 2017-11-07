@@ -75,15 +75,18 @@
                   <div>
                   
                   <form method="POST" data-ajax="false" action="<%=request.getContextPath()%>/showAll">
+                  <input type="hidden" name = "usernameG" value = "${usernameG}"/>
                		 <button name = "showAll" type="submit" >Afficher tous vos articles</button>
                 </form>
                 
                   <form method="POST" data-ajax="false" action="<%=request.getContextPath()%>/ajouterArticle">
                		 <button name = "addArticle" type="submit" >Ajouter un article</button>
+               		 <input type="hidden" name = "usernameG" value = "${usernameG}"/>
                 </form>
                 
                 <form method="POST" data-ajax="false" action="<%=request.getContextPath()%>/DeleteArticle">
                		 <button name = "showAll" type="submit" >Supprimer un article</button>
+               		 <input type="hidden" name = "usernameG" value = "${usernameG}"/>
                 </form>
                   
                   	  </div>
