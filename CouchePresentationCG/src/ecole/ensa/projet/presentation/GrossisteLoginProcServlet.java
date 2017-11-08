@@ -51,12 +51,6 @@ public class GrossisteLoginProcServlet extends HttpServlet
 			//show errors
 			req.getRequestDispatcher("/vues/grossisteLogin.jsp").forward(req, resp);
 		}*/
-			
-		
-			
-		
-		
-		
 	}
 	
 

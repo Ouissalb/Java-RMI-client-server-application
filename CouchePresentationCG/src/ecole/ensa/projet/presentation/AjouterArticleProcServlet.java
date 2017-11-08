@@ -38,16 +38,16 @@ public class AjouterArticleProcServlet extends HttpServlet {
 		
 		Article modelArticle = null;
 		
-		try 
+		try
 		{
 			
 			System.out.println("article-name IN SERVLET IS :" +acrticleName);
 			System.out.println("article-type IN SERVLET IS :" +articleType);
 			
-			
 			IArticleMetier metierArticle =  (IArticleMetier)Naming.lookup("rmi://localhost/article");
 			modelArticle =  metierArticle.ajouterArticle(articleComposition, usernameG, acrticleName, articlePrice, articleType);
-		
+			
+			System.out.println( modelArticle.getNom() );
 			System.out.println("GROSSSITE USERNAME IS : " + usernameG);
 			
 		}catch (NotBoundException e)

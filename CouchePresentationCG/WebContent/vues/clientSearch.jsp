@@ -73,8 +73,9 @@
 					  <div data-role="main" class="ui-content">
 					    <form method="post" action="<%=request.getContextPath()%>/afficherArticles" data-ajax="false">
 					    <div class ="search-bar">
-					    	<input name="keyword" type="text" placeholder="Saisir un mot clé"></br>
+					    	<!--  <input name="keyword" type="text" placeholder="Saisir un mot clé"></br> -->
 					    </div>
+					    
 					     <select name="selectType">
 					      <option value="type1">type1</option>
 					      <option value="type2">type2</option>

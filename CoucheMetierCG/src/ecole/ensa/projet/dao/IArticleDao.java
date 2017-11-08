@@ -1,5 +1,7 @@
 package ecole.ensa.projet.dao;
 
+import java.util.ArrayList;
+
 import ecole.ensa.projet.model.Article;
 
 public interface IArticleDao 
@@ -9,4 +11,7 @@ public interface IArticleDao
 	
 	Article afficherArticle (int id);
 
+	ArrayList<Article> getAll();
+	
+	ArrayList<Article> getAll(int min , int max);
 }

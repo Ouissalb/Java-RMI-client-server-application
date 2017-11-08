@@ -67,9 +67,6 @@
               <div class="indent">
                 <div class="indent1">
                 
-                  
-               
-                
                   <h3>Que voulez vous faire?</h3>
                   
                   <div>

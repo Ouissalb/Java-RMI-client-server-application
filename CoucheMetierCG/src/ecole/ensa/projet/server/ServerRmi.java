@@ -8,6 +8,7 @@ import java.rmi.registry.LocateRegistry;
 import ecole.ensa.projet.metier.ArticleMetier;
 import ecole.ensa.projet.metier.ClientMetier;
 import ecole.ensa.projet.metier.GrossisteMetier;
+import ecole.ensa.projet.metier.IGrossisteMetier;
 
 
 
