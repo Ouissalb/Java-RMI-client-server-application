@@ -9,6 +9,16 @@ public class Article implements Serializable
 	private String prix;
 	private String type;
 	private String composition;
+	private String username;
+	
+	public String getUsername()
+	{
+		return username;
+	}
+	public void setUsername(String username)
+	{
+		this.username = username;
+	}
 	
 	public String getNom()
 	{
@@ -46,13 +56,14 @@ public class Article implements Serializable
 		this.composition = composition;
 	}
 	
-	public Article (String nom, String prix, String type, String composition)
+	public Article (String nom, String prix, String type, String composition, String username)
 	{
 		super();
 		this.prix = prix;
 		this.nom = nom;
 		this.type = type;
 		this.composition = composition;
+		this.username = username;
 		
 	}
 

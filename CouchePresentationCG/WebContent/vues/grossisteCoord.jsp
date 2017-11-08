@@ -74,12 +74,11 @@
                  
              
                 </div>
-                <h4>Résultats de votre recherche</h4>
+                <h4>Les coordonnées du grossiste :</h4>
                 <ul class="list">
-                  <c:forEach items="${articles}" var="un_article">
-               <li><strong><a data-ajax="false" href="<%=request.getContextPath()%>/grossiste?username=${un_article.username}"><c:out value="${un_article.nom}" /> - <c:out value="${un_article.prix}" /> $ </a></strong><c:out value="${un_article.composition}" /></li>
-			
-				</c:forEach>
+          
+               <li class ="contact"><strong><a data-ajax="false" href=""><c:out value="${grossisteNom}" /> </a></strong><c:out value="${grossisteCoord}" /></li>
+		
                 </ul>
               </div>
             </div>

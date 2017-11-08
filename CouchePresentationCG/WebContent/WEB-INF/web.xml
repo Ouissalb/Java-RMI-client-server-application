@@ -95,6 +95,15 @@
   	<url-pattern>/add</url-pattern>
   </servlet-mapping> 
   
+  <servlet>
+  	<servlet-name>ShowGrossisteServlet</servlet-name>
+  	<servlet-class>ecole.ensa.projet.presentation.ShowGrossisteServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+  	<servlet-name>ShowGrossisteServlet</servlet-name>
+  	<url-pattern>/grossiste</url-pattern>
+  </servlet-mapping> 
+  
  
  
   <welcome-file-list>

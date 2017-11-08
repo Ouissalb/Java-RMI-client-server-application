@@ -37,7 +37,7 @@ public class ArticleDao implements IArticleDao{
 					connexion = JDBCMySQLConnection.getConnection();
 					statement = connexion.createStatement();
 					statement.executeUpdate(query, Statement.RETURN_GENERATED_KEYS);
-					Article article = new Article(nom, prix, type, composition);
+					Article article = new Article(nom, prix, type, composition, usernameG);
 					return article;
 					
 				} catch (SQLException e) {
@@ -98,7 +98,7 @@ public class ArticleDao implements IArticleDao{
 	
 	public Article map(ResultSet resultSet) throws SQLException
 	{
-	    Article article = new Article(resultSet.getString( "NOM" ), String.valueOf( resultSet.getInt( "PRIX" )), resultSet.getString( "TYPE" ) , resultSet.getString( "COMPOSITION" ));
+	    Article article = new Article(resultSet.getString( "NOM" ), String.valueOf( resultSet.getInt( "PRIX" )), resultSet.getString( "TYPE" ) , resultSet.getString( "COMPOSITION" ), resultSet.getString( "USERNAME_G" ));
 	    return article;
 	}
 	
@@ -120,6 +120,8 @@ public class ArticleDao implements IArticleDao{
                         article = map( resultSet );
                         the_array.add( article );
                         System.out.println( "nom : "  + article.getNom() );
+                        
+                        		
                     }
 
                     System.out.println( "nom : qsdf" );

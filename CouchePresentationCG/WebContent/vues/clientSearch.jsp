@@ -76,12 +76,12 @@
 					    	<!--  <input name="keyword" type="text" placeholder="Saisir un mot clé"></br> -->
 					    </div>
 					    
-					     <select name="selectType">
+					     <!-- <select name="selectType">
 					      <option value="type1">type1</option>
 					      <option value="type2">type2</option>
 					      <option value="type3">type3</option>
 					      <option value="type4">type4</option>
-					    </select> 
+					    </select>  -->
 					    
 					      <div data-role="rangeslider">
 					        <label for="price-min">Price:</label>

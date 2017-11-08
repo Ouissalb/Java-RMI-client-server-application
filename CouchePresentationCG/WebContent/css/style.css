@@ -37,6 +37,7 @@ ul, ol {list-style:none}
 /* LISTS */
 .list {margin-bottom:-11px}
 .list li {padding:0 0 11px 98px;min-height:74px;height:auto!important;height:74px;background:url(../images/icon.png) no-repeat left top;line-height:1.43em;position:relative}
+.list li .contact {padding:0 0 11px 98px;min-height:74px;height:auto!important;height:74px;background:url(../images/contact.png) no-repeat left top;line-height:1.43em;position:relative}
 .list li strong {display:block;font-size:.86em;padding-bottom:5px}
 .list li a {color:#4e4e4e;text-decoration:none}
 .list li a:hover {text-decoration:underline}

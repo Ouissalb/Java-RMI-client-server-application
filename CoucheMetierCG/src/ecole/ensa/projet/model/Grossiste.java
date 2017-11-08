@@ -50,6 +50,17 @@ public class Grossiste implements Serializable
 		this.coordonnees = coordonnees;
 	}
 	
+	
+	public Grossiste (String username,  String nom, String coordonnees)
+	{
+		super();
+		this.username = username;
+		this.nom = nom;
+
+		this.coordonnees = coordonnees;
+		
+	}
+	
 	public Grossiste (String username, String password, String nom, String coordonnees)
 	{
 		super();

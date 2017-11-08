@@ -4,6 +4,8 @@ import java.sql.Connection;
 import java.sql.ResultSet;
 import java.sql.SQLException;
 import java.sql.Statement;
+import java.util.ArrayList;
+
 
 import ecole.ensa.projet.model.Grossiste;
 
@@ -122,4 +124,40 @@ public class GrossisteDao implements IGrossisteDao
 				}
 				return null;
 	}
+
+	
+	
+	public Grossiste getAll(String username)
+	{
+	    String query = "SELECT * FROM GROSSISTE WHERE USERNAME = '"+username+"';";
+        ResultSet resultSet = null;
+        Grossiste grossiste = null ;
+       System.out.println(query);
+                try {
+                    connexion = JDBCMySQLConnection.getConnection();
+                    statement = connexion.createStatement();
+                    resultSet = statement.executeQuery( query );
+
+                    System.out.println( "nom : " );
+
+                    while ( resultSet.next() ) {
+                    	grossiste = new Grossiste(resultSet.getString( "NOM" ), String.valueOf( resultSet.getString( "USERNAME" )), resultSet.getString( "COORDONNEES" ));
+                    }
+
+                    
+
+                } catch (SQLException e) {
+                    e.printStackTrace();
+                } finally {
+                    if (connexion != null) {
+                        try {
+                            connexion.close();
+                        } catch (SQLException e) {
+                            e.printStackTrace();
+                        }
+                    }
+                }
+                return grossiste;
+	}
+	
 }

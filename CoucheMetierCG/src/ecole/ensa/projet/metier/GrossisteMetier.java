@@ -2,6 +2,7 @@ package ecole.ensa.projet.metier;
 
 import java.rmi.RemoteException;
 import java.rmi.server.UnicastRemoteObject;
+import java.util.ArrayList;
 
 import ecole.ensa.projet.dao.GrossisteDao;
 import ecole.ensa.projet.dao.IGrossisteDao;
@@ -26,6 +27,12 @@ public class GrossisteMetier extends UnicastRemoteObject implements IGrossisteMe
 	public Grossiste ajouterAuCercle(String username, String password, String nom, String coordonnees) {
 		// TODO Auto-generated method stub
 		return dao.ajouterAuCercle(username, password, nom, coordonnees);
+	}
+
+	@Override
+	public Grossiste getAll(String username) throws RemoteException {
+		// TODO Auto-generated method stub
+		return dao.getAll(username);
 	}
 
 
